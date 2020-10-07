@@ -1,0 +1,1854 @@
+<resources>
+    <string name="app_name">QB Guide</string>
+
+    <!--notes of fundamentals -->
+    <string name="fun_note_qb_desc">
+        QBASIC is Quick Beginner\'s All Purpose Symbolic Instruction Code is a high level programming language developed by Microsoft
+        Corporation in 1985. It is a modular programming language, where program is divided into different modules or procedures.
+        QBASIC is simple and easy to learn. It uses english like keywords and mathematical symbols to write programs.
+    </string>
+    <string name="fun_note_keyword">
+        Keywords are predefined, reserved words used in programming that have special meanings to the compiler. Keywords are part of
+        the syntax and they cannot be used as an identifier. There  are 64 keywords in QBASIC. Examples: CLS, FOR, IF
+        \n<b>Some of basic keywords are:</b>\n
+        <b>CLS</b>: used to clear the output screen.\n
+        <b>REM</b>: used to write comment.\n
+        <b>INPUT</b>: used to receive input from user.\n
+        <b>PRINT</b>: used to provide output to user.\n
+        <b>END</b>: used to terminate block of code or program.
+    </string>
+    <string name="fun_note_variable">
+        In programming, a variable is a container (storage area) to hold data.\n
+        To indicate the storage area, each variable should be given a unique name (identifier). Variable names are just the symbolic
+        representation of a memory location. In QBASIC, there are two different types of variables.\n1. Numeric variable\teg: LET a\n2.
+        String variable\teg: LET a$\nLET is a keyword used to declare a variable.
+        \nNumeric variables are used to store numeric data while that of string variables are designed to store character and string.
+    </string>
+    <string name="fun_note_constant">
+        If you want to define a variable whose value cannot be changed, you can use the CONST keyword. This will create a constant.
+    </string>
+
+
+    <!--notes of decision -->
+    <string name="dec_note_conditional">
+        In programming language, conditional statements are used for decision making purposes. Whenever we have to execute a particular
+        statement block from available set of multiple statement blocks depending on the truth value of particular condition, then we
+        need to implement conditional statement. There are different types of conditional statements designed to be used for different
+        scenarios.
+        \nconditional expressions and conditional constructs are features of a programming language, which perform different
+        computations or actions depending on whether a programmer-specified boolean condition evaluates to true or false. Apart from
+        the case of branch predication, this is always achieved by selectively altering the control flow based on some condition.
+    </string>
+
+    <string name="dec_syn_if">
+        IF [condition] THEN [stmt block] END IF
+    </string>
+    <string name="dec_note_if">
+        One of the most useful statements in QBasic is the IF statement. It allows you to choose what your program will do depending
+        on the conditions you give it. It will execute the [stmt block] within if block only if the given condition is true.
+    </string>
+
+    <string name="dec_syn_ifElse">
+        IF [condition] THEN \n[stmt block 1] \nELSE \n[stmt block 2] \nEND IF
+    </string>
+    <string name="dec_note_ifElse">
+        To choose between two different code blocks, the ELSE statement is used. When the [condition] is true, [stmt block 1] will
+        be executed, otherwise [stmt block 2] will be executed.
+    </string>
+
+    <string name="dec_syn_ifElseIf">
+        IF [condition1] THEN \nstmt_block_1 \nELSEIF [condition2] THEN \n[stmt_block_2] \nELSE \n[default_stmt] \nEND IF
+    </string>
+    <string name="dec_note_ifElseIf">
+        The IF ELSEIF statement is useful when you need to check multiple conditions within the program.
+    </string>
+    <string name="dec_note_select">
+        SELECT CASE statement executes one of several statement blocks depending on the value of an expression.\n
+        Syntax\n
+        SELECT CASE testexpression\n
+        CASE expressionlist1\n
+         [statementblock-1]\n
+        CASE expressionlist2\n
+         [statementblock-2]…\n
+        CASE ELSE\n
+         [statementblock-n]\n
+        END SELECT\n
+    </string>
+
+
+    <!--notes of looping -->
+    <string name="loop_note1">
+        The process of repeating or doing same task many times until the given condition is true is called looping or iteration.
+        There are different looping statements are used in QBASIC such as FOR … NEXT, WHILE … WEND, DO … LOOP, etc. It allows
+        a specified group of statements to be executed a certain number of times while certain condition is true. Among these looping
+        statements FOR … NEXT is the most common and popular looping statement.
+    </string>
+    <string name="loop_note2">
+        The FOR … Next is a most popular and mostly used looping statement which is used to execute the set of statements repeatedly
+        for a given number of times.\n
+        Syntax:\n
+        FOR = TO STEP n\n
+        [statements]\n
+        NEXT\n\n
+    </string>
+    <string name="loop_note3">
+        In a WHILE … WEND loop, if the condition is True, all statements are executed until WEND keyword is encountered. If the
+        condition is false, the loop is exited and the control jumps to very next statement after WEND keyword.\n
+        Syntax:\n
+        WHILE\n
+        [statements]\n
+        WEND\n\n
+    </string>
+    <string name="loop_note4">
+
+        It is another type of looping statement in QBASIC. Sometime it is also called DO WHILE LOOP. In this loop, the instructions
+        within the loop are performed if the comparison is true. We can use this loop by 4 different methods. Syntax are given below.\n
+        Syntax 1\n
+        DO … WHILE\n
+        [statements]\n
+        LOOP\n
+        Syntax 2\n
+        DO\n
+        [statements]\n
+        LOOP WHILE\n
+        Syntax 3\n
+        DO … UNTIL\n
+        [statement]\n
+        LOOP\n
+        Syntax 4\n
+        DO\n
+        [statement]\n
+        LOOP UNTIL\n\n
+
+    </string>
+    <string name="loop_note5">
+        A nested loop is a loop within a loop, an inner loop within the body of an outer one. This repeats until the outer loop finishes.
+        QBASIC allows to use one loop inside another loop.
+    </string>
+
+    <!--notes of library function -->
+    <string name="lib_note1">
+        A function is a built-in formula or a ready made program which helps us to perform a certain task such as mathematical, financial,
+        logical etc. A function manipulates data passes to it and returns either a string or a numeric. There are two types
+        of functions:\n
+        1. User defined function
+        2. Built in function
+    </string>
+
+    <string name="lib_note2">
+        It is created by the programmer to perform the operations as per the requirements. It can be numeric or
+        string function. To define a function DEF FN is used and it must be executed before the function.\n
+         Syntax: DEF FNname (parameter list)
+    </string>
+
+    <string name="lib_note3">
+        It is pre-defined program which is provided by QBASIC to perform some task easily. It gives many more built-in functions for
+        manipulating strings, numbers. It makes our work easy. The values provided are called arguments and it can accept more than
+        one arguments. And the value which is returned is called its return value. There are two types of built in function:\n
+        1. Numeric functions\n2. String Functions
+    </string>
+
+    <string name="lib_note4">
+        It provides a faster way to evaluate many mathematical functions.  Some of them are:\n
+
+        ABS function : It returns corresponding positive value. General form: ABS(x)\n
+        CINT function: It returns nearest numeric expression from -32768 to 32767 as argument. General form: CINT(x)\n
+        COS function: It is used to obtain the cosine of x.  General form: COS(x)\n
+        INT function: It returns an integer that is smaller then or equal to a numeric expression. General  form: INT(x)\n
+        SIN function: It is used to get the sine of x. General form: SIN(x)\n
+        SGN function: It is used to return the sign of numeric expression. General form: SGN(x)\n
+        SQR function: It is sued to calculate and return the square root of non-negative number. General   form: SQR(x)\n
+        TAN function: It is used to get the tangent of x. General form: TAN(x)\n
+    </string>
+
+    <string name="lib_note5">
+It is used to operate and manipulate on string.  Some of them are:\n
+
+ASC function: It returns the ASCII code corresponding to the character of string. General form : ASC(string)\n
+CHR$ function : It returns a character that corresponds to specific ASCII values in between -128  and 127 as arguments. General form: CHR$(m)\n
+INSTR$ function: It searches for one string inside another and returns the position of first character. General form: INSTR([m,]x$,y$)\n
+LEN function: It counts and returns the total number of characters in a string. General form:           LEN(v)\n
+LEFT$ function: It is used to extract and return the numbers of characters from the left of a string. General form: LEFT$(expression,x)\n
+RIGHT$ function: It is used to extract and return the numbers of characters from the right of a string. General form: RIGHT$(expression,y)\n
+MID$ function: It is used to replace the part of the string variable with another. General form: MID$(expression,start,length)\n
+SPACE$ function: It returns a string of spaces of a specified length. General form: SPACE$(x)\n
+STR$ function: It converts a numeric expression to string and returns the same. General form: STR$(x)\n
+STRING$ function:It returns a string of a specified length made up of a repeating character.General form: STRING$(x,y | z$)\n
+LCASES$ and UCASES$ function: It converts string values to lowercase and uppercase respectively. General form : LCASES$(expression) and UCASES$(expression)\n
+DATE$ and TIME$: It retrieve the current date and time respectively. General form: DATE$=String and TIME$=String\n
+    </string>
+
+
+    <!--notes of modular programming -->
+    <string name="mod_note1">
+        The process of breaking a large program into small manageable tasks and designed them independently is
+        called modular programming. A modular program consists of a main module and one or more sub modules or procedures. Each sub
+        module has a unique name. Modular Programming is a approach in which the program is divided into separate independent units
+        is called modules.\nA modular program consist of main module and sub-module. \nMain module : Modular Programming structure
+        consists of many modules,the program entry point is a module,which is located at the top of the order modules.This top level
+        module is called main module. The main module is the controlling section of a modular programming.
+        \nSub- module : Sub- module is a program which is written under the main module. A modular program may have one or more than
+        one sub- module. It is called sub- program. Qbasic is also known as modular programming language because it allows the user to
+        divide program into manageable and functional modules or blocks with the help of sub procedure and function procedre.
+    </string>
+    <string name="mod_note2">
+        There are two different ways to handle modular programming in QBASIC:\n
+        a) Creating user-defined function [Function procedure]\n
+        b) Creating sub procedure
+    </string>
+    <string name="mod_note3">
+        Despite of having number of library functions, programmers need to make such functions on their own. Such types of functions
+        that are created and defined by the user are known as user-defined function. A user defined function may or may not return value
+        to the calling module.\n
+        A user-defined function is written with FUNCTION … END FUNCTION statement.\n
+        While writing a program using function procedure, we divide the whole program into two
+        different parts. The first part is known as main module and the second one is known as
+        function module. Depending on the type of function, we can include different operations
+        in different modules. However the function must be declared in main module as the first statement.
+        \nThe general syntax of using function procedure is:\n
+        main module consists of\n
+		- function declaration( function prototype)\n
+		syntax: \n
+		DECLARE FUNCTION fname(args)\n
+		-i/o operations\n
+		-function call \n
+	function module consists of logical computations\n
+		-Syntax:\n
+		FUNCTION fname(args) [known as function header]\n
+        -logical computations
+		END FUNCTION\n
+        Types of function:\n
+1.passing args and returning value \n
+        main module - i/o \nfunction module- logical computation\n
+2.passing args and returning no value\n
+        main module - input\nfunction module- logical computation + output\n
+3.passing no args and returning value\n
+        main module - output\nfunction module- input + logical computation\n
+4. passing no args and returning no value\nmain module - function call only\n	function module- i/o + logical computation
+
+    </string>
+    <string name="mod_note4">
+        Q.WAP to display sum of two numbers supplied by user\n
+        <b>Normal procedure</b>
+        CLS
+        INPUT" Enter two numbers:"; n1, n2
+        s = n1 + n2
+        PRINT s
+        END\n\n
+
+        <b>Using function procedure</b>\n
+
+
+        <b>1.passing args and returning value\n
+        Main module\n
+        s1. function declaration\n
+        s2. user input\n
+        s3. function call\n
+        s4. output\n\n
+
+        function module\n
+        s1. function header\n
+        s2. logic computation\n
+        s3. value return through function name\n\n</b>
+
+
+        WAP to display sum of two numbers supplied by user using function passing args and returning value\n
+
+        DECLARE FUNCTION sum(n1, n2)\n
+        CLS\n
+        INPUT \"Enter two numbers:\";x,y\n
+        s = sum(x,y)\n
+        PRINT s\n
+        END\n\n
+
+        FUNCTION sum(a,b)\n
+        c = a + b\n
+        sum = c\n
+        END FUNCTION\n
+
+        <b>
+        2.passing args and returning no value\n
+        main module\n
+        s1. function declaration\n
+        s2. user input\n
+        s3. function call\n\n
+
+        function module\n
+        s1. function header\n
+        s2. logical computation\n
+            s3. output\n\n</b>
+
+        WAP to display sum of two numbers supplied by user using function passing args and returning no value.
+        main module\n
+        DECLARE FUNCTION sum(n1, n2)\n
+        CLS\n
+        INPUT\"Enter two numbers: \"; x,y\n
+        sum(x,y)\n
+        END\n\n
+
+
+        function module\n
+        FUNCTION sum(a, b)\n
+        c = a + b\n
+        PRINT c\n
+        END FUNCTION\n
+
+        <b>
+        3.passing NO args and returning value\n
+
+        main module
+
+        S1. function declare\n
+        s2. function call\n
+        s3. output\n
+
+
+        function module\n
+
+        s1. function header declaration\n
+        s2. user input\n
+        s3. logical computation\n
+        s4. value return\n\n</b>
+
+        WAP to display sum of two numbers supplied by user using 3.(passing no args and returning value)\n
+
+        DECLARE FUNCTION sum()\n
+        CLS\n
+        s = sum\n
+        PRINT s\n
+        END\n\n
+
+
+        FUNCTION sum\n
+        INPUT "Enter two numbers: "; a, b\n
+        c = a + b\n
+        sum = c\n
+        END FUNCTION\n
+
+
+        <b>
+        4.passing NO args and returning NO value\n
+
+        main module\n
+
+        S1. function declare\n
+        s2. function call\n\n
+
+        function module\n
+
+        s1. function header declaration\n
+        s2. user input\n
+        s3. logical computation\n
+        s4. output\n\n</b>
+
+
+        WAP to display sum of two numbers supplied by user using function passing no args and returning no value.\n
+
+        DECLARE FUNCTION sum()\n
+        s=sum\n
+        END\n\n
+
+        FUNCTION sum\n
+        INPUT "Enter two numbers: "; a, b\n
+        c = a + b\n
+        PRINT c\n
+        END FUNCTION\n\n
+    </string>
+    <string name="mod_note5">
+        A sub procedure, also known as sub program, is a small manageable functional part of a program that performs specific task. It
+        does not return any value to the calling module.\n
+        A sub program is written with SUB … END SUB statement.\n
+        The general structure of using sub procedure is :\n
+        -<b>main module</b>\n
+	    procedure declaration\n
+		DECLARE SUB PROCEDURE_NAME(args list)\n
+	    procedure call stmt\n
+		CALL PROCEDURE_NAME()\n
+
+        -<b>sub procedure module</b>\n
+	    -procedure header\n
+		SUB PROCEDURE_NAME(var list)\n
+	    -logical computation\n
+
+	END SUB\n
+    </string>
+    <string name="mod_note6">
+        1.WAP to find sum of two nums using sub procedure by passing args\n
+
+        DECLARE SUB sum(a,b)\n
+        CLS\n
+        INPUT \"Enter two nums: \";x,y\n
+        CALL sum(x,y)\n
+        END\n\n
+
+        SUB sum(p,q)\n
+        s = p + q\n
+        PRINT s\n
+        END SUB\n\n
+
+        2.WAP to find sum of two nums using sub procedure WITHOUT passing args\n
+
+        DECLARE SUB sum()\n
+        CLS\n
+        CALL sum\n
+        END\n\n
+
+        SUB sum\n
+        INPUT \"Enter two nums: \"; p,q\n
+        s = p + q\n
+        PRINT s\n
+        END SUB\n
+    </string>
+
+    <!--notes of file handling-->
+    <string name="file_note1">
+        File is a collection data or information. Almost all information stored in a computer must be in a file. In our daily life,
+        we are creating different types of files such as paint file, WordPad file, excel file, text file etc. We also save our QBASIC
+        programs with .BAS file extension, that is also a type of file. So, we can say that everything in computer is stored in a file.\n
+        There are two types of files in QBASIC, they are: data file and program file. \n
+        Data file is a collection of data such as name, address, phone, etc. required for data processing.\n
+        Program file consists of set of instruction written in computer language for data processing.\n
+        File handling is simply writing program and storing information in files for future use which helps in managing data and
+        working with data, we can search data from files, delete it, and do much more.
+    </string>
+    <string name="file_note2">
+        For file handling in QBASIC, first we need to have access to the file in which we\'re going to work with. For this, we need
+        to open the file. To open the file we use the OPEN statement as\n
+        OPEN file [FOR mode] AS [#]filenum\n
+        A file is string expression that specifies a file to be opened for writing or reading.\n
+        mode is one of the following:\n
+        INPUT: to read data contents from file
+        OUTPUT: to write data to the file
+        APPEND: to add additional records to the existing file\n
+        Once a file is opened, we must close the file using CLOSE statement.
+    </string>
+    <string name="file_note3">
+        Shell: This command is used to go to DOS prompt temporarily.\n
+        NAME: This command is used to change the old file into new file.\n
+        Syntax: Name " old file name" AS "New file name"\n
+        Kill: This command is used to remove the file from the disk. \n
+        Syntax: Kill [ File Specification ] \n
+        MKDIR: This command is used to create a directory in a specific disk. \n
+        Syntax: MKDIR "path" \n
+        CHDIR: This command is used to change the directory. \n
+        Syntax: CHDIR " path" \n
+        RMDIR: This command is used to remove the specific directory. \n
+        Syntax: RMDIR "path" \n
+        System: This command is used to close the Q-BASIC program.\n
+        OPEN: This statement is used to open the file. \n
+        WRITE#: This statement is used to place the data into data file.\n
+        NPUT#: This statement is used to read each data and stores to corresponding variable.\n
+        LINE INPUT#: This statement reads entire line having maximum 255 characters and stores to a single string variable.\n
+        EOF ( ) : This statement is used to end a file. \n
+</string>
+
+    <!--programs of conditional statements -->
+    <string name="conp1q">1. WAP to check if a num is even or odd .</string>
+    <string name="conp1">
+        CLS\n
+        INPUT \"Enter any number \" ; N\n
+        IF N MOD 2 =0 THEN\n
+        PRINT \"The number is EVEN \";\n
+        ELSE\n
+        PRINT \"The number is ODD \";\n
+        END IF\n
+        END\n
+    </string>
+    <string name="conp2q">2. WAP to find maximum among 3 different numbers.</string>
+    <string name="conp2">
+CLS\n
+INPUT \"enter the first number \"; a\n
+INPUT \"enter the second number \"; b\n
+INPUT \"enter the third number \"; c\n
+IF a &gt; b AND a &gt; c THEN g = a\n
+IF b &gt; a AND b &gt; c THEN g = b\n
+IF c &gt; a AND c &gt; b THEN g = c\n
+PRINT \"Greatest number is \"; g\n
+END\n
+    </string>
+    <string name="conp3q">3. WAP to find minimum among 3 different numbers .</string>
+    <string name="conp3">
+        CLS\n
+        INPUT \"enter the first number \"; a\n
+        INPUT \"enter the second number \"; b\n
+        INPUT \"enter the third number \"; c\n
+        IF a &lt; b AND a &lt; c THEN s = a\n
+        IF b &lt; a AND b &lt; c THEN s = b\n
+        IF c &lt; a AND c &lt; b THEN s = c\n
+        PRINT \"Smallest number is \"; s\n
+        END\n
+    </string>
+    <string name="conp4q">
+        4. WAP that makes a bill of selling goods. Also add 10% VAT in total bill with discount rate given below:
+        1-100 =  10% \n101-500 = 20% \n501-1000=30% \n1001-5000=40% \n5001 above=50%.
+    </string>
+    <string name="conp4">
+        CLS\n
+        INPUT \"enter the amount \"; a\n
+        IF a &gt; 0 AND a &lt;= 100 THEN\n
+        d = p * 0.10\n
+        ELSEIF a &gt;= 101 AND a &lt;= 500 THEN\n
+        d = a * 0.20\n
+        ELSEIF a &gt;= 501 AND a &lt;= 1000 THEN\n
+        d = a * 0.30\n
+        ELSEIF a &gt;= 1001 AND a &lt;= 5000 THEN\n
+        d = a * 0.40\n
+        ELSEIF a &gt;= 5001 THEN
+        d = a * 0.50\n
+        END IF\n
+        v = (a − d) * 10 / 100\n
+        t = a − d + v\n
+        PRINT \"You have to Pay only Rs.: \"; t\n
+        END\n
+    </string>
+
+    <string name="conp5q">5. WAP to find sum of maximum and minimum among 3 numbers .</string>
+    <string name="conp5">
+        CLS\n
+        INPUT \"enter the first number \"; a\n
+        INPUT \"enter the second number \"; b\n
+        INPUT \"enter the third number \"; c\n
+        IF a &gt; b AND a &gt; c THEN g = a\n
+        IF b &gt; a AND b &gt; c THEN g = b\n
+        IF c &gt; a AND c &gt; b THEN g = c\n
+        IF a &lt; b AND a &lt; c THEN s = a\n
+        IF b &lt; a AND b &lt; c THEN s = b\n
+        IF c &lt; a AND c &lt; b THEN s = c \n
+        sum = g + s\n
+        PRINT \"Sum = \"; sum\n
+        END\n
+
+    </string>
+    <string name="conp6q">6. WAP to check if given lengths are sides of triangle or not .</string>
+    <string name="conp6">
+        CLS\n
+        INPUT \"enter sides \"; a, b, c\n
+        IF (a + b) &gt; c AND (b + c) &gt; a AND (c + a) &gt; b THEN\n
+        PRINT \"its triangle \"\n
+        ELSE\n
+        PRINT \"NO \"\n
+        END IF\n
+        END\n
+    </string>
+    <string name="conp7q">7. WAP to add, subtract, multiply or divide two numbers on the basis
+        of choice of user.</string>
+    <string name="conp7">
+        CLS\n
+        start:\n
+        INPUT \"enter the first number\"; a\n
+        INPUT \"enter the second number\"; b\n
+        PRINT \"YOUR CHOICES\"\n
+        PRINT \"1 for ADDITION\"\n
+        PRINT \"2 for SUBTRACTION\"\n
+        PRINT \"3 for multiplication\"\n
+        PRINT \"4 for division\"\n
+        INPUT \"Enter your choice\"; choice\n
+        SELECT CASE choice\n
+        CASE 1\n
+        PRINT \"THE SUM OF TWO NUMBERS\"; a + b\n
+        CASE 2\n
+        PRINT \" the SUBTRACTION OF TWO NUMBERS\" ; a − b\n
+        CASE 3\n
+        PRINT \"THE MULTIPLICATION OF TWO NUMBERS\"; a * b\n
+        CASE 4\n
+        PRINT \"THE DIVISION OF TWO NUMBERS\"; a / b\n
+        CASE ELSE\n
+        PRINT \"INVALID CHOICE:\"\n
+        END SELECT\n
+        INPUT \"Do you want to do more calculation?\"; ch$\n
+        IF ch$ = \"Y\" OR ch$ = \"y\" THEN GOTO start\n
+        END\n
+    </string>
+    <string name="conp8q">8. WAP to find median among 3 numbers supplied by user.</string>
+    <string name="conp8">
+        CLS\n
+        INPUT \" Enter  any three different numbers \"; a, b, c\n
+        IF (a &gt; b AND a &lt; c) OR (a &lt; b AND a &gt; c) THEN\n
+        PRINT \"the middle number is \"; a\n
+        ELSEIF (b &gt; c AND b &lt; a) OR (b &lt; c AND b &gt; a) THEN\n
+        PRINT \"the middle number is \"; b\n
+        ELSE\n
+        PRINT \"the middle number is \"; c\n
+        END IF\n
+        END\n
+    </string>
+    <string name="conp9q">9. WAP to check if a candidate is eligible to caste vote or not .</string>
+    <string name="conp9">
+        CLS\n
+        INPUT \"Enter your age: \";n\n
+        IF n &gt;=18 THEN\n
+        PRINT \"Eligible to caste vote\"\n
+        ELSE\n
+        PRINT \"Ineligible to caste vote\"\n
+        END IF\n
+        END\n
+    </string>
+    <string name="conp10q">1. WAP to check if a string supplied by user is palindrome or not.</string>
+    <string name="conp10">
+        CLS\n
+        INPUT "Enter a word"; W$\n
+        C = LEN(W$)\n
+        FOR I = C TO 1 STEP -1\n
+        S$ = MID$(W$, I, 1)\n
+        D$ = D$ + S$\n
+        NEXT I\n
+        IF W$ = D$ THEN\n
+        PRINT W$; "is a palindrome"\n
+        ELSE\n
+        PRINT W$; "is not a palindrome"\n
+        END IF\n
+        END\n
+
+    </string>
+
+    <string name="conp11q">WAP to count number of consonants in the name supplied by user </string>
+    <string name="conp11">
+        CLS\n
+        INPUT \"Type your name: \"; name$\n
+        FOR i = 1 TO LEN(name$)\n
+        b$ = MID$(name$, i, 1)\n
+        IF b$ &lt; &gt; \"a\" AND b$ &lt; &gt; \"e\" AND b$ &lt; &gt;\"i\" AND b$ &lt; &gt; \"o\" AND b$ &lt; &gt; \"u\" THEN\n
+        c = c + 1\n
+        END IF\n
+        NEXT i\n
+        PRINT \"Number of consonants :\"; c\n
+        END
+
+
+    </string>
+
+
+    <!--programs of looping -->
+    <string name="loopp1q">1. WAP to display first 10 even numbers using for loop.</string>
+    <string name="loopp1">
+        CLS\n
+        n = 2\n
+        FOR i = 1 TO 10\n
+        PRINT n;\n
+        n = n + 2\n
+        NEXT i\n
+        END\n
+    </string>
+    <string name="loopp2q">2. WAP to display first 10 even numbers using while loop. .</string>
+    <string name="loopp2">
+        CLS\n
+        n = 2\n
+        i = 1\n
+        WHILE i &lt;=10\n
+        PRINT n;\n
+        n = n + 2\n
+        i = i + 2\n
+        WEND\n
+        END\n
+    </string>
+    <string name="loopp3q">3. WAP to display first 10 even numbers using do while loop. .</string>
+    <string name="loopp3">
+        CLS\n
+        n = 2\n
+        i = 1\n
+        DO\n
+        PRINT n;\n
+        n = n + 2\n
+        LOOP WHILE i &lt;=10\n
+        END\n
+    </string>
+    <string name="loopp4q">4. WAP to calculate sum of first 10 odd numbers.</string>
+    <string name="loopp4">
+        CLS\n
+        s = 0\n
+        n = 1\n
+        FOR i = 1 TO 10\n
+        s = s + n\n
+        n = n + 2\n
+        NEXT i\n
+        PRINT \"The Sum of first 10 odd number is \"; s\n
+        END
+    </string>
+    <string name="loopp5q">5. WAP to calculate sum of first 10 even numbers .</string>
+    <string name="loopp5">
+        CLS\n
+        s = 0\n
+        n = 2\n
+        FOR i = 1 TO 10\n
+        s = s + n\n
+        n = n + 2\n
+        NEXT i\n
+        PRINT \"The Sum of first 10 even number is \"; s\n
+        END\n
+    </string>
+    <string name="loopp6q">6. WAP to check if a num is prime or composite .</string>
+    <string name="loopp6">
+        CLS\n
+        INPUT \"Enter a number \"; n\n
+        FOR j = 1 TO n\n
+        IF n MOD j = 0 THEN c = c + 1\n
+        NEXT j\n
+        IF c = 2 THEN\n
+        PRINT \"It is prime number\"\n
+        ELSE\n
+        PRINT \"It is composite number\"\n
+        END IF\n
+        END\n
+    </string>
+    <string name="loopp7q">7. WAP to display composite numbers from 50 to 100.</string>
+    <string name="loopp7">
+        CLS\n
+        FOR n = 50 TO 100\n
+        C = 0\n
+        FOR j = 1 TO n\n
+        IF n MOD j = 0 THEN C = C + 1\n
+        NEXT j\n
+        IF C &lt;&gt; 2 THEN PRINT n\n
+        NEXT n\n
+        END\n
+    </string>
+    <string name="loopp8q">8. WAP to display prime numbers from 100 to 200.</string>
+    <string name="loopp8">
+        CLS\n
+        FOR n=100 TO 200\n
+        C=0\n
+        FOR j=1 TO n\n
+               IF n MOD j=0 THEN c=c+1\n
+        NEXT j\n
+        IF c=2 THEN PRINT n\n
+        NEXT n\n
+        END\n
+    </string>
+    <string name="loopp9q">9. WAP to check if a number is armstrong or not.</string>
+    <string name="loopp9">
+        CLS\n
+        INPUT \"enter any number \"; num\n
+        n = num\n
+        sum = 0\n
+        WHILE num &lt;&gt; 0\n
+        r = num MOD 10\n
+        num = num \ 10\n
+        sum = sum + (r ^ 3)\n
+        WEND\n
+        IF n = sum THEN\n
+        PRINT \"It is armstrong \"\n
+        ELSE\n
+        PRINT \"It is not armstrong \"\n
+        END IF\n
+        END\n
+    </string>
+    <string name="loopp10q">10. WAP to find reverse of a number .</string>
+    <string name="loopp10">
+        CLS\n
+        INPUT \"Enter any number \"; num\n
+        WHILE num &lt;&gt; 0\n
+        r = num MOD 10\n
+        s = s * 10 + r\n
+        num = INT(num / 10)\n
+        WEND\n
+        PRINT \"The reversed number is \"; s\n
+        END\n
+    </string>
+
+    <string name="loopp11q">11. WAP to check if a number is palindrome or not</string>
+    <string name="loopp11">
+        CLS\n
+        INPUT \"enter any number \"; num\n
+        n = num\n
+        WHILE num &lt;&gt; 0\n
+        r = num MOD 10\n
+        s = s * 10 + r\n
+        num = num \ 10\n
+        WEND\n
+        IF s = n THEN\n
+        PRINT \"It is palindrome number \"\n
+        ELSE\n
+        PRINT \"It is not palindrome number \"\n
+        END IF\n
+        END\n
+    </string>
+
+    <string name="loopp12q">12. WAP to display multiplication table of number.</string>
+    <string name="loopp12">
+        CLS\n
+        INPUT \"enter any number \"; n\n
+        FOR i = 1 TO 20\n
+        PRINT n; \"x\"; i; \"=\"; n * i\n
+        NEXT i\n
+        END\n
+    </string>
+
+    <string name="loopp13q">13. WAP to display factorial of a number.</string>
+    <string name="loopp13">
+        CLS\n
+        Fact = 1\n
+        INPUT \" Enter a number \"; n\n
+        FOR j = 1 TO n\n
+        Fact = Fact * j\n
+        NEXT j\n
+        PRINT \"Factorial is \"; Fact\n
+        END\n
+    </string>
+
+    <string name="loopp14q">14. WAP to display factors of number.</string>
+    <string name="loopp14">
+        CLS\n
+        INPUT \" Enter a number \"; n\n
+        FOR j = 1 TO n\n
+        IF n MOD j = 0 THEN\n
+        PRINT j\n
+        END IF\n
+        NEXT j\n
+        END\n
+    </string>
+
+
+    <!--programs of library functions -->
+    <string name="libp1q">1. WAP to check if a string supplied by user is palindrome or not.</string>
+    <string name="libp1">
+        CLS\n
+        INPUT "Enter a word"; W$\n
+        C = LEN(W$)\n
+        FOR I = C TO 1 STEP -1\n
+        S$ = MID$(W$, I, 1)\n
+        D$ = D$ + S$\n
+        NEXT I\n
+        IF W$ = D$ THEN\n
+        PRINT W$; "is a palindrome"\n
+        ELSE\n
+        PRINT W$; "is not a palindrome"\n
+        END IF\n
+        END\n
+
+    </string>
+
+    <string name="libp2q">2. WAP to count number of consonants in the name supplied by user </string>
+    <string name="libp2">
+        CLS\n
+        INPUT \"Type your name: \"; name$\n
+        FOR i = 1 TO LEN(name$)\n
+        b$ = MID$(name$, i, 1)\n
+        IF b$ &lt; &gt; \"a\" AND b$ &lt; &gt; \"e\" AND b$ &lt; &gt;\"i\" AND b$ &lt; &gt; \"o\" AND b$ &lt; &gt; \"u\" THEN\n
+        c = c + 1\n
+        END IF\n
+        NEXT i\n
+        PRINT \"Number of consonants :\"; c\n
+        END
+
+
+    </string>
+
+    <string name="libp3q">3. WAP  to count frequency of \'a\' in the string.</string>
+    <string name="libp3">
+        CLS\n
+        INPUT \"Type any string \"; s$\n
+        FOR i = 1 TO LEN(s$)\n
+        b$ = MID$(s$, i, 1)\n
+        IF b$ = \"a\" THEN\n
+        c = c + 1\n
+        END IF\n
+        NEXT i\n
+        PRINT \"Frequency of a:\"; c\n
+        END
+
+    </string>
+
+    <string name="libp4q">4. WAP to check whether a num is whole num or not.</string>
+    <string name="libp4">
+        CLS\n
+        INPUT \"Enter a num: \"; a\n
+        b = INT(a)\n
+        IF b = a THEN\n
+        PRINT a; \" is a whole number\"\n
+        ELSE\n
+        PRINT a; \" is a fractional number\"\n
+        END IF\n
+        END
+
+    </string>
+
+    <string name="libp5q">5. WAP to display only vowels from string.</string>
+    <string name="libp5">
+        CLS\n
+        INPUT \"Type any string\"; s$\n
+        FOR i = 1 TO LEN(s$)\n
+        b$ = MID$(s$, i, 1)\n
+        IF b$ = \"a\" AND b$ =  \"e\" AND b$ =  \"i\" AND b$ =  \"o\" AND b$ = \"u\" AND b$ = \"A\" AND b$ =  \"E\" AND b$ =  \"I\" AND b$ =  \"O\" AND b$ = \"U\"  THEN\n
+        c$ = c$ + b$\n
+        END IF\n
+        NEXT i\n
+        PRINT \"Vowels only:\"; c$\n
+        END
+
+    </string>
+
+    <string name="libp6q">6. WAP to check whether a num is positive, negative or zero.</string>
+    <string name="libp6">
+        CLS\n
+        INPUT \"Enter a num: \"; a\n
+        IF a&gt;0 THEN\n
+        PRINT a; \" is a positive number\"\n
+        ELSEIF a&lt;0 THEN\n
+        PRINT a; \" is a negative number\"\n
+        ELSE\n
+        PRINT a; \" is a zero\"\n
+        END IF\n
+        END
+
+    </string>
+
+    <string name="libp7q">7. WAP to check if a num is perfect square or not.</string>
+    <string name="libp7">
+        CLS\n
+        INPUT \"Enter a num:\"; n\n
+        b = SQR(n)\n
+        IF b = INT(b) THEN\n
+        PRINT \"perfect square\"\n
+        ELSE\n
+        PRINT \"not a perfect square\"\n
+        END IF\n
+        END
+
+    </string>
+
+    <string name="libp8q">8. WAP to check the type of character.</string>
+    <string name="libp8">
+        CLS\n
+        INPUT \"Enter a character\"; c$\n
+        t = ASC(c$)\n
+        SELECT CASE t\n
+        CASE 65 TO 90\n
+        PRINT c$; \" is a uppercase letter\"\n
+        CASE 97 TO 122\n
+        PRINT c$; \" is a lowercase letter\"\n
+        CASE 48 TO 57\n
+        PRINT c$; \" is a number\"\n
+        CASE ELSE\n
+        PRINT c$; \" is a special character\"\n
+        END SELECT\n
+        END
+
+    </string>
+
+    <string name="libp9q">9. WAP to convert decimal number to binary number system.</string>
+    <string name="libp9">
+        CLS\n
+        INPUT \"ENTER DECIMAL NUMBER\"; D\n
+        WHILE D &lt; &gt; 0\n
+        R = D MOD 2\n
+        S$ = STR$(R) + S$\n
+        D = D \ 2\n
+        WEND\n
+        PRINT \"BINARY EQUIVALENT VALUE=\"; S$\n
+        END
+
+    </string>
+
+    <string name="libp10q">10. WAP to check DOB</string>
+    <string name="libp10">
+        CLS\n
+        INPUT \"Enter your DOB in MM-DD-YY format: \"; DOB$\n
+        month$ = MID$(DOB$, 1, 2)\n
+        b$ = DATE$\n
+        sysmonth$ = MID$(b$, 1, 2)\n
+        IF month$ = sysmonth$ THEN\n
+        PRINT \"you are born in current month\"\n
+        ELSE\n
+        PRINT \"you are not born in current month\"\n
+        END IF\n
+        END
+
+    </string>
+
+    <string name="libp11q">11. WAPto convert decimal number to hexadecimal number system.</string>
+    <string name="libp11">
+        CLS\n
+        INPUT \"ENTER DECIMAL NUMBER\"; D\n
+        WHILE D &lt;&gt; 0\n
+        R = D MOD 16\n
+        IF R &lt; 10 THEN\n
+        S$ = STR$(R) + S$\n
+        ELSE\n
+        S$ = CHR$(R + 55) + S$\n
+        END IF\n
+        D = D \ 16\n
+        WEND\n
+        PRINT \"HEXADECIMAL EQUIVALENT VALUE=\"; S$\n
+        END
+
+    </string>
+
+    <string name="libp12q">12. WAP to convert hexadecimal number to decimal number system.</string>
+    <string name="libp12">
+        CLS\n
+        INPUT \"ENTER HEXADECIMAL NUMBER\"; N$\n
+        FOR I = LEN(N$) TO 1 STEP -1\n
+        B$ = MID$(N$, I, 1)\n
+        IF B$ = \"A\" THEN B$ = \"10\"\n
+        IF B$ = \"B\" THEN B$ = \"11\"\n
+        IF B$ = \"C\" THEN B$ = \"12\"\n
+        IF B$ = \"D\" THEN B$ = \"13\"\n
+        IF B$ = \"E\" THEN B$ = \"14\"\n
+        IF B$ = \"F\" THEN B$ = \"15\"\n
+        S = S + VAL(B$) * 16 ^ P\n
+        P = P + 1\n
+        NEXT I\n
+        PRINT \"DECIMAL EQUIVALENT VALUE=\"; S\n
+        END
+    </string>
+
+    <string name="libp13q">13. WAP to display only initials from string.</string>
+    <string name="libp13">
+        CLS\n
+        INPUT \"Type any string\"; s$\n
+        c$ = LEFT$(s$, 1)\n
+        FOR i = 1 TO LEN(s$)\n
+        b$ = MID$(s$, i, 1)\n
+        IF b$ = \" \" THEN\n
+        x$ = MID$(s$, i + 1, 1)\n
+        c$ = c$ + x$\n
+        END IF\n
+        NEXT i\n
+        PRINT \"Initials only: \"; LTRIM$(c$)\n
+        END
+
+    </string>
+
+    <string name="libp14q">14. WAP to change case of character supplied by user.[input: Hi output: hI]</string>
+    <string name="libp14">
+        CLS\n
+        INPUT \"Enter a string:\"; s$\n
+        b = LEN(s$)\n
+        FOR i = 1 TO b\n
+        c$ = MID$(s$, i, 1)\n
+        a = ASC(c$)\n
+        IF a &gt;= 65 AND a &lt;= 90 THEN\n
+        a = a + 32\n
+        x$ = CHR$(a)\n
+        y$ = y$ + x$\n
+        ELSEIF a &gt;= 97 AND a &lt;= 122 THEN\n
+        a = a - 32\n
+        x$ = CHR$(a)\n
+        y$ = y$ + x$\n
+        ELSE\n
+        y$ = y$ + x$\n
+        END IF\n
+        NEXT i\n
+        PRINT y$\n
+        END
+
+    </string>
+
+    <string name="libp15q">15. WAP to count total number of characters in string supplied by user without using LEN().</string>
+    <string name="libp15">
+        CLS\n
+        INPUT \"enter a string:\"; s$\n
+        i = 1\n
+        a = 0\n
+        ch$ = LEFT$(s$, 1)\n
+        WHILE ch$ &lt;&gt; \"\"\n
+        ch$ = MID$(s$, i, 1)\n
+        a = a + 1\n
+        i = i + 1\n
+        WEND\n
+        PRINT a - 1\n
+        END
+
+    </string>
+
+    <!--programs of modular programming -->
+    <string name="modp1q">1. WAP to calculate area of four walls.</string>
+    <string name="modp1">
+        DECLARE FUNCTION AREA (l,b,h)\n
+        CLS\n
+        INPUT \"Enter the length\"; l\n
+        INPUT \"Enter the breadth\"; b\n
+        INPUT \"Enter the height\"; h\n
+        a = AREA(l,b,h)\n
+        PRINT a\n
+        END\n\n
+
+        FUNCTION AREA (l,b,h)\n
+        AREA = 2 * h *(l+b)\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp2q">2. WAP to calculate SI.</string>
+    <string name="modp2">
+        DECLARE FUNCTION SI (P,T,R)\n
+        CLS\n
+        INPUT \"Enter the principal\"; P\n
+        INPUT \"Enter the time\"; T\n
+        INPUT \"Enter the rate\"; R\n
+        interest = SI(P,T,R)\n
+        PRINT interest\n
+        END\n\n
+
+        FUNCTION SI (P,T,R)\n
+        SI = (P*T*R)/100\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp3q">3. WAP to convert Nepalese currency to Indian.</string>
+    <string name="modp3">
+        DECLARE FUNCTION CUREN(NRS)\n
+        CLS\n
+        INPUT \"Enter Nrs amount\"; NRS\n
+        INR = CUREN(NRS)\n
+        PRINT INR\n
+        END\n\n
+
+        FUNCTION CUREN(NRS)\n
+        CUREN=NRS/1.6\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp4q">4. WAP to calculate circumference of circle.</string>
+    <string name="modp4">
+        DECLARE FUNCTION CIRC (r)\n
+        CLS\n
+        INPUT \"Enter the radius: \"; r\n
+        c = CIRC(r)\n
+        PRINT c\n
+        END\n\n
+
+        FUNCTION CIRC (r)\n
+        CONST PI = 3.1416\n
+        CIRC = 2 * PI * r\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp5q">5. WAP to check whether a num is even or odd.</string>
+    <string name="modp5">
+        DECLARE FUNCTION ODDEVN (num)\n
+        CLS\n
+        INPUT \"Enter the number: \"; num\n
+        numb = ODDEVN(num)\n
+        END\n\n
+
+        FUNCTION ODDEVN (num)\n
+        IF num MOD 2 = 0 THEN\n
+        PRINT \"it is even\"\n
+        ELSE\n
+        PRINT \" it is odd\"\n
+        END IF\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp6q">6. WAP to check whether a num is divisible by 4 and 6 or not.</string>
+    <string name="modp6">
+        DECLARE FUNCTION DIVISIB (num)\n
+        CLS\n
+        INPUT \"Enter the number: \"; num\n
+        numb = DIVISIB(num)\n
+        END\n\n
+
+        FUNCTION DIVISIB (num)\n
+        IF num MOD 4 = 0 AND num MOD 6 = 0 THEN\n
+        PRINT \"it is divisible by 4 and 6\"\n
+        ELSE\n
+        PRINT \"it is not divisible by 4 and 6\"\n
+        END IF\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp7q">7. WAP to calculate sum of square of all digits of input num.</string>
+    <string name="modp7">
+        DECLARE FUNCTION SQ (num)\n
+        CLS\n
+        INPUT \"Enter the number: \"; num\n
+        numb = SQ(num)\n
+        END\n\n
+
+        FUNCTION SQ (num)\n
+        Nr=0\n
+        WHILE num&lt;&gt;0\n
+        a=num MOD 10\n
+        Nr=Nr+ a^2\n
+        num =num\10\n
+        WEND\n
+        SQ = Nr\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp8q">8. WAP that creates a user defined function REV$(S$) to display reverse of the input string.</string>
+    <string name="modp8">
+        DECLARE FUNCTION REV$ (S$)\n
+        INPUT \"Enter the string\"; S$\n
+        RE$ = REV$(S$)\n
+        PRINT \"The reverse is: \"; RE$\n
+        END\n\n
+
+        FUNCTION REV$ (S$)\n
+        FOR i = LEN(S$) TO 1 STEP -1\n
+        x$ = x$ + MID$(S$, i, 1)\n
+        NEXT i\n
+        REV$ = x$\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp9q">9. WAP that accepts three numbers and find the difference between greatest and smallest.</string>
+    <string name="modp9">
+        DECLARE FUNCTION DIFF (n1, n2, n3)\n
+        CLS\n
+        INPUT \"Enter first num: \"; n1\n
+        INPUT \"Enter second num: \"; n2\n
+        INPUT \"Enter third num: \"; n3\n
+        sm = DIFF (n1, n2, n3)\n
+        PRINT \"Difference  is: \"; sm\n
+        END\n\n
+
+        FUNCTION DIFF (n1, n2, n3)\n
+        IF n1 &lt; n2 AND n1 &lt; n3 THEN\n
+        smallest = n1\n
+        ELSEIF n2 &lt; n1 AND n2 &lt; n3 THEN\n
+        smallest = n2\n
+        ELSE\n
+        smallest = n3\n
+        END IF\n
+        IF n1 &gt; n2 AND n1 &gt; n3 THEN\n
+        greatest = n1\n
+        ELSEIF n2 &gt; n1 AND n2 &gt; n3 THEN\n
+        greatest = n2\n
+        ELSE\n
+        greatest = n3\n
+        END IF\n
+        DIFF = greatest-smallest\n
+        END FUNCTION
+    </string>
+
+    <string name="modp10q">10. WAP to check whether the first character of input string is a number, an uppercase or lowercase character or none of them.</string>
+    <string name="modp10">
+        DECLARE FUNCTION TYPES (c$)\n
+        CLS\n
+        INPUT \"Enter a character\"; c$\n
+        typ = TYPES(c$)\n
+        END\n\n
+
+        FUNCTION TYPES (c$)\n
+        x$=MID$(c$,1,1)\n
+        t = ASC(x$)\n
+        SELECT CASE t\n
+        CASE 65 TO 90\n
+        PRINT x$; \" is a uppercase letter\"\n
+        CASE 97 TO 122\n
+        PRINT x$; \" is a lowercase letter\"\n
+        CASE 48 TO 57\n
+        PRINT x$; \" is a number\"\n
+        CASE ELSE\n
+        PRINT \"none of them\"\n
+        END SELECT\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp11q">11. WAP to check whether a number is perfect square num.</string>
+    <string name="modp11">
+        DECLARE FUNCTION PERSQ (num)\n
+        CLS\n
+        INPUT \"Enter a  number:\"; num\n
+        RES = PERSQ(num)\n
+        END\n\n
+
+        FUNCTION PERSQ (num)\n
+        b = SQR(num)\n
+        IF b = INT(b) THEN\n
+        PRINT \"it is a perfect square\"\n
+        ELSE\n
+        PRINT \"it is not a perfect square\"\n
+        END IF\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp12q">12. WAP to find HCF of two nums.</string>
+    <string name="modp12">
+        DECLARE FUNCTION HCF(a,b)\n
+        CLS\n
+        INPUT \"Enter two numbers\"; a,b\n
+        p = HCF(a,b)\n
+        PRINT \"HCF is: \";p\n
+        END\n\n
+
+        FUNCTION HCF(a,b)\n
+        x=a\n
+        y=b\n
+        WHILE(y&lt;&gt;0)\n
+        t=y\n
+        y= x MOD y\n
+        x=t\n
+        WEND\n
+        HCF=x\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp13q">13. WAP to find square of a number.</string>
+    <string name="modp13">
+        DECLARE FUNCTION SQ (num)\n
+        CLS\n
+        INPUT \"Enter a  number:\"; num\n
+        RES = SQ(num)\n
+        PRINT RES\n
+        END\n\n
+
+        FUNCTION SQ (num)\n
+        b = num ^ 2\n
+        SQ = b\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp14q">14. WAP to display product of individual digits of the numbers.</string>
+    <string name="modp14">
+        DECLARE FUNCTION PDGT (num)\n
+        CLS\n
+        INPUT \"Enter a num: \"; num\n
+        PRINT PDGT(num)\n
+        END\n\n
+
+        FUNCTION PDGT (num)\n
+        pro = 1\n
+        WHILE num &lt;&gt; 0\n
+        num1 = num MOD 10\n
+        pro = pro * num1\n
+        num = num \ 10\n
+        WEND\n
+        PDGT = pro\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp15q">15. WAP to count the number of digits of a number.</string>
+    <string name="modp15">
+        DECLARE FUNCTION COUNT (num)\n
+        CLS\n
+        INPUT \"Enter a num: \"; num\n
+        PRINT COUNT(num)\n
+        END\n\n
+
+        FUNCTION COUNT (num)\n
+        cnt = 0\n
+        num1 = 0\n
+        WHILE num &lt;&gt; 0\n
+        num1 = num MOD 10\n
+        cnt = cnt + 1\n
+        num = num \ 10\n
+        WEND\n
+        COUNT = cnt\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp16q">16. WAP to check if a number is palindrome or not.</string>
+    <string name="modp16">
+        DECLARE FUNCTION PALIN (num)\n
+        CLS\n
+        INPUT \"enter a number: \"; num\n
+        x = PALIN (num)\n
+        END\n\n
+
+        FUNCTION PALIN (num)\n
+        Nr=0\n
+        tmp=num\n
+        WHILE num&lt;&gt;0\n
+        a=num MOD 10\n
+        Nr=Nr*10+a\n
+        num =num\10\n
+        WEND\n
+        IF Nr=tmp THEN\n
+        PRINT tmp; \" is a plindrome number\"\n
+        ELSE\n
+        PRINT tmp; \" is not a plindrome number\"\n
+        END IF\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp17q">17. WAP to check whether a input number is Armstrong or not(3 digit num).</string>
+    <string name="modp17">
+        DECLARE FUNCTION ARMS (num)\n
+        CLS\n
+        INPUT \"enter a number: \"; num\n
+        x = ARMS(num)\n
+        END\n\n
+
+        FUNCTION ARMS (num)\n
+        temp = num\n
+        sum = 0\n
+        WHILE temp &lt;&gt; 0\n
+        r = temp MOD 10\n
+        temp = temp \ 10\n
+        sum = sum + (r * r * r)\n
+        WEND\n
+        IF sum = num THEN\n
+        PRINT num; \" is an armstrong num\"\n
+        ELSE\n
+        PRINT num; \" is not an armstrong num\"\n
+        END IF\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp18q">18. WAP to check if a number is prime numer or not.</string>
+    <string name="modp18">
+        DECLARE FUNCTION PRIMENUM (num)\n
+        CLS\n
+        INPUT \"enter a number: \"; num\n
+        x = PRIMENUM(num)\n
+        END\n\n
+
+        FUNCTION PRIMENUM (num)\n
+        count = 0\n
+        FOR j = 2 TO num - 1\n
+        r = num MOD j\n
+        IF r = 0 THEN\n
+        count = count + 1\n
+        END IF\n
+        NEXT j\n
+        IF count = 0 THEN\n
+        PRINT num; \" is a prime number\"\n
+        ELSE\n
+        PRINT num; \" is not a prime number\"\n
+        END IF\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp19q">19. WAP to count total numbers of words in the input string.</string>
+    <string name="modp19">
+        DECLARE FUNCTION CNT (s$)\n
+        CLS\n
+        INPUT \"Enter muliple word\"; s$\n
+        x = CNT(s$)\n
+        PRINT x\n
+        END\n\n
+
+        FUNCTION CNT (s$)\n
+        y = 1\n
+        x$ = LEFT$(s$, 1)\n
+        FOR i = 1 TO LEN(s$)\n
+        b$ = MID$(s$, i, 1)\n
+        c = ASC(b$)\n
+        IF c = 32 THEN\n
+        y = y + 1\n
+        END IF\n
+        NEXT i\n
+        CNT = y\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp20q">20. WAP to count number of vowels.</string>
+    <string name="modp20">
+        DECLARE FUNCTION CNTV (s$)\n
+        CLS\n
+        INPUT \"Enter muliple word\"; s$\n
+        x = CNTV(s$)\n
+        PRINT \"the number of vowels is: \"; x\n
+        END\n\n
+
+        FUNCTION CNTV (s$)\n
+        s$ = LCASE$(s$)\n
+        FOR i = 1 TO LEN(s$)\n
+        b$ = MID$(s$, i, 1)\n
+        IF b$ = \"a\" OR b$ = \"e\" OR b$ = \"i\" OR b$ = \"o\" OR b$ = \"u\" THEN\n
+        c = c + 1\n
+        END IF\n
+        NEXT i\n
+        CNTV = c\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp21q">21. WAP to print consonants only.</string>
+    <string name="modp21">
+        DECLARE FUNCTION CONSTO$ (s$)\n
+        CLS\n
+        INPUT \"Enter muliple word\"; s$\n
+        x$ = CONSTO$(s$)\n
+        PRINT x$\n
+        END\n\n
+
+        FUNCTION CONSTO$ (s$)\n
+        FOR i = 1 TO LEN(s$)\n
+        b$ = MID$(s$, i, 1)\n
+        IF b$ &lt;&gt; \"a\" AND b$ &lt;&gt; \"e\" AND b$ &lt;&gt; \"i\" AND b$ &lt;&gt; \"o\" AND b$ &lt;&gt; \"u\" AND b$ &lt;&gt; \"A\" AND b$ &lt;&gt; \"E\" AND b$ &lt;&gt; \"I\" AND b$ &lt;&gt; \"O\" AND b$ &lt;&gt; \"U\" THEN\n
+        c$ = c$ + b$\n
+        END IF\n
+        NEXT i\n
+        CONSTO$ = c$\n
+        END FUNCTION
+    </string>
+
+    <string name="modp22q">22. WAP that accepts three strings and find longest string.</string>
+    <string name="modp22">
+        DECLARE FUNCTION LNGST$ (a$, b$, c$)\n
+        CLS\n
+        INPUT \"Enter first string: \"; x$\n
+        INPUT \"Enter second string: \"; y$\n
+        INPUT \"Enter third string: \"; z$\n
+        lon$ = LNGST$ ( x$, y$, z$ )\n
+        PRINT \"Longest string is: \"; lon$\n
+        END\n\n
+
+        FUNCTION LNGST$  (p$,q$,r$)\n
+        n1=LEN(p$)\n
+        n2=LEN(q$)\n
+        n3=LEN(r$)\n
+
+        IF n1 &gt; n2 AND n1 &gt; n3 THEN\n
+        ls$ = p$\n
+        ELSEIF n2 &gt; n1 AND n2 &gt; n3 THEN\n
+        ls$ = q$\n
+        ELSE\n
+        ls$ = r$\n
+        END IF\n
+        LNGST$= ls$\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp23q">23. WAP to calculate sum of all digits of input num.</string>
+    <string name="modp23">
+        DECLARE FUNCTION SM (num)\n
+        CLS\n
+        INPUT \"Enter the number: \"; num\n
+        numb = SM(num)\n
+        PRINT numb\n
+        END\n\n
+
+        FUNCTION SM (num)\n
+        sum=0\n
+        WHILE num&lt;&gt;0\n
+        a=num MOD 10\n
+        sum=sum+a\n
+        num =num\10\n
+        WEND\n
+        SM=sum\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp24q">24. WAP that contains user defined function FACTOR(N) to display sum of factors of a num.</string>
+    <string name="modp24">
+        DECLARE FUNCTION FACTOR(N)\n
+        CLS\n
+        INPUT “Enter a number: “;N\n
+        SF = FACTOR(N)\n
+        PRINT “Sum of factors : “; SF\n
+        END\n\n
+
+        FUNCTION FACTOR(N)\n
+        Sum=0\n
+        FOR i=1 TO N\n
+        IF N MOD i=0 THEN\n
+        PRINT i\n
+        Sum=Sum+ i\n
+        ENDIF\n
+        NEXT i\n
+        FACTOR = Sum\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp25q">25. WAP to calculate factorial of a num.</string>
+    <string name="modp25">
+        DECLARE FUNCTION FACT (num)\n
+        CLS\n
+        INPUT \"Enter the number: \"; num\n
+        tmp=num\n
+        numb = FACT (num)\n
+        PRINT “Factorial of “;tmp; “ is: “;numb\n
+        END\n\n
+
+        FUNCTION FACT (num)\n
+        f=1\n
+        WHILE num&lt;&gt;0\n
+        f=f*num\n
+        num =num-1\n
+        WEND\n
+        FACT =f\n
+        END FUNCTION
+
+    </string>
+
+    <string name="modp26q">26. WAP to check whether a supplied word palindrome or not.</string>
+    <string name="modp26">
+        DECLARE FUNCTION PALIN$(P$)\n
+        CLS\n
+        INPUT \"Enter a word\"; P$\n
+        x$ = PALIN$((P$))\n
+        END\n\n
+
+        FUNCTION PALIN$ (W$)\n
+        C = LEN(W$)\n
+        FOR I = C TO 1 STEP -1\n
+        S$ = MID$(W$, I, 1)\n
+        D$ = D$ + S$\n
+        NEXT I\n
+        IF W$ = D$ THEN\n
+        PRINT W$; \"is a palindrome\"\n
+        ELSE\n
+        PRINT W$; \"is not a palindrome\"\n
+        END IF\n
+        END FUNCTION
+
+    </string>
+
+
+    <!--programs of file handling -->
+    <string name="filep1q">1. WAP to store records regarding the info of book num, book\'s name and writer\'s name in a sequential data file called \"Library.dat\". </string>
+    <string name="filep1">
+        OPEN \"LIBRARY.DAT\" FOR OUTPUT AS #1\n
+        CLS\n
+        INPUT \"Enter book num:\"; num\n
+        INPUT \"Enter book name:\"; bname$\n
+        INPUT \"Enter writer\'s name:\"; wname$\n
+        WRITE #1, num, bname$, wname$\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep2q">2. WAP that asks student\'s name, roll and class and stores into \"class.dat\" only those records who are studying in class 10. User can supply the records as per his/her needs. </string>
+    <string name="filep2">
+        OPEN \"CLASS.DAT\" FOR OUTPUT AS #1\n
+        CLS\n
+        DO\n
+        INPUT \"Enter name:\"; N$\n
+        INPUT \"Enter roll:\"; roll\n
+        INPUT \"Enter class:\"; cl\n
+        IF cl = 10 THEN\n
+        WRITE #1, N$, roll, cl\n
+        END IF\n
+        INPUT \"Do you want to continue?\"; ch$\n
+        LOOP WHILE UCASE$(ch$) = \"Y\"\n
+        CLOSE #1\n
+        END\n
+
+    </string>
+
+    <string name="filep3q">3. WAP that asks student\'s name, class and marks secured in three subjects. Store the data in a sequential data file \"result.dat\" along with the total marks. Make a provision to ask the use to enter another record. </string>
+    <string name="filep3">
+        OPEN \"RESULT.DAT\" FOR OUTPUT AS #1\n
+        top:\n
+        CLS\n
+        INPUT \"Enter name:\"; N$\n
+        INPUT \"Enter class:\"; cl\n
+        INPUT \"Enter roll no:\"; roll\n
+        PRINT \"enter the marks obtained in\"\n
+        INPUT \"math:\"; mth\n
+        INPUT \"science:\"; sci\n
+        INPUT \"computer:\"; cs\n
+        tot = mth + sci + cs\n
+        WRITE #1, N$, cl, roll, mth, sci, cs, tot\n
+        INPUT \"Do you want to continue\"; ch$\n
+        IF LCASE$(ch$) = \"y\" THEN GOTO top\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep4q">4. A sequential data file \"student.dat\" contains few records under the fields name, English, nepali and computer. WAP to add few more records in the same sequential data file. </string>
+    <string name="filep4">
+        OPEN \"STUDENT.DAT\" FOR APPEND AS #1\n
+        top:\n
+        CLS\n
+        INPUT \"Enter name:\"; N$\n
+        PRINT \"enter the marks obtained in\"\n
+        INPUT \"english:\"; eng\n
+        INPUT \"nepali:\"; nep\n
+        INPUT \"computer:\"; cs\n
+        WRITE #1, N$, eng, nep, cs\n
+        INPUT \"Do you want to continue\"; ch$\n
+        IF LCASE$(ch$) = \"y\" THEN\n
+        GOTO top\n
+        END IF\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep5q">5. A sequential data file \"emp.dat\" contains name, post and salary fields of info about the employees. Wap to display all the info of employee along with the tax amount. (tax = 15% of salary) </string>
+    <string name="filep5">
+    OPEN \"EMP.DAT\" FOR INPUT AS #1\n
+    CLS\n
+    WHILE NOT EOF(1)\n
+    INPUT #1, n$, pst$, sal\n
+    tax = 0.15 * sal\n
+    PRINT n$, pst$, sal, tax\n
+    WEND\n
+    CLOSE #1\n
+    END\n
+    </string>
+
+    <string name="filep6q">6. WAP to create a sequential data file \"Employee.Dat\" to store employees\' name, age, gender and salary.</string>
+    <string name="filep6">
+        OPEN \"Employee.Dat\" FOR OUTPUT AS #1\n
+        CLS\n
+        INPUT \"Enter Emp name:\"; ename$\n
+        INPUT \"Enter age:\"; age\n
+        INPUT \"Enter gender:\"; g$\n
+        INPUT \"Enter sal:\"; sal\n
+        WRITE #1, ename$, age, g$, sal\n
+        CLOSE #1\n
+        END\n
+
+    </string>
+
+    <string name="filep7q">7. WAP to read the data from \"INFO.DAT\" that contains student name, class, roll, DOB and address. Write/copy all the data whose DOB is current month to the data file \"INFO.DAT\".</string>
+    <string name="filep7">
+        OPEN \"INFO.DAT\" FOR INPUT AS #1\n
+        OPEN \"TMP.DAT\" FOR OUTPUT AS #2\n
+        WHILE NOT EOF(1)\n
+        INPUT #1, N$, cl, roll, dob$, add$\n
+        b$ = LEFT$(dob$, 2)\n
+        sy$ = LEFT$(DATE$, 2)\n
+        IF b$ = sy$ THEN\n
+        WRITE #2, N$, cl, roll, dob$, add$\n
+        END IF\n
+        WEND\n
+        CLOSE #1, #2\n
+        KILL \"INFO.DAT\"\n
+        NAME \"TMP.DAT\" AS \"INFO.DAT\"\n
+        END\n
+    </string>
+
+    <string name="filep8q">8. WAP that reads the \"INFO.DAT\" file from D: drive hat has 500 records of employees and display only it\'s last 50 records. </string>
+    <string name="filep8">
+        OPEN \"D:\INFO. DAT\" FOR INPUT AS #1\n
+        CLS\n
+        FOR I = 1 TO 500\n
+        IF I &gt; 450 THEN\n
+        INPUT #1, A$\n
+        PRINT A$\n
+        END IF\n
+        NEXT I\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep9q">9. WAP to read information as name, address, roll and salary from \"SALARY.DAT\" file and display them. </string>
+    <string name="filep9">
+        OPEN \"SALARY. DAT\" FOR INPUT AS #1\n
+        CLS\n
+        WHILE NOT EOF(1)\n
+        INPUT #1, NAME$, ADD$, ROLL, SAL\n
+        PRINT NAME$, ADD$, ROLL, SAL\n
+        WEND\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep10q">10. A sequential data file \"sales.txt\" has several records with fields item\'s name, rate and quantity. Wap that reads it\'s first 10 records and display them. </string>
+    <string name="filep10">
+        OPEN \"sales.txt\" FOR INPUT AS #1\n
+        CLS\n
+        FOR I = 1 TO 10\n
+        INPUT #1, NAME$, RATE, Q\n
+        PRINT NAME$, RATE, Q\n
+        NEXT I\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep11q">11. WAP that asks student\'s name and marks in english, math and computer and stores into \"pass.dat\" only those records that are passed in all the subjects. The user will be asked whether to input another record or not. [ pass mark = 40] </string>
+    <string name="filep11">
+        OPEN \"PASS.DAT\" FOR OUTPUT AS #1\n
+        CLS\n
+        DO\n
+        INPUT \"Name:\"; n$\n
+        PRINT \"Enter marks in\"\n
+        INPUT \"English:\"; eng\n
+        INPUT \"Math:\"; mth\n
+        INPUT \"Computer:\"; cs\n
+
+        IF eng &gt;= 40 AND mth &gt;= 40 AND cs &gt;= 40 THEN\n
+        WRITE #1, n$, eng, mth, cs\n
+        END IF\n
+        INPUT \"Do you want to enter another record?[y/n]\"; ch$\n
+        LOOP WHILE LCASE$(ch$) = \"y\"\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep12q">12. A sequential data file \"pass.dat\" has several records having fields student\'s name and marks in eng, math and computer. Wap that reads all the records and display only those records whose name starts with \'A\' and also counts the total number of records stored in the file. </string>
+    <string name="filep12">
+        OPEN \"PASS. DAT \" FOR INPUT AS #1\n
+        CLS\n
+        WHILE NOT EOF(1)\n
+        INPUT #1, n$, en, np, cs\n
+        nm$ = LEFT$(n$, 1)\n
+        IF UCASE$(nm$) = \"A\" THEN\n
+        PRINT n$, en, np, cs\n
+        END IF\n
+        count = count + 1\n
+        WEND\n
+        CLOSE #1\n
+        PRINT count\n
+        END\n
+    </string>
+    <string name="filep13q">13. WAP to display all the records from a sequential data file \"records.dat\". </string>
+    <string name="filep13">
+        OPEN \"records.dat\" FOR INPUT AS #1\n
+        CLS\n
+        WHILE NOT EOF(1)\n
+        LINE INPUT #1, n$\n
+        PRINT n$\n
+        WEND\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep14q">14. WAP that asks user\'s name and stores it\'s reverse form into a sequential data file \"REVERSE.DAT\". Make a provision so that user can input 5 records at each execution of program. </string>
+    <string name="filep14">
+        OPEN \"REVERSE.DAT\" FOR OUTPUT AS #1\n
+        DO\n
+        CLS\n
+        FOR i = 1 TO 5\n
+        x$ = \"\"\n
+        INPUT \"Enter your name:\"; n$\n
+        FOR j = LEN(n$) TO 1 STEP -1\n
+        x$ = x$ + MID$(n$, j, 1)\n
+        NEXT j\n
+        WRITE #1, x$\n
+        NEXT i\n
+        INPUT \"do you want to continue:\"; ch$\n
+        LOOP WHILE UCASE$(ch$) = \"Y\"\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep15q">15. WAP that asks item\'s name, rate an quantity and stores into \"sale.txt\". The user can supply 10 records in each execution of program. </string>
+    <string name="filep15">
+        OPEN \"sales.txt\" FOR OUTPUT AS #1\n
+        DO\n
+        CLS\n
+        FOR i = 1 TO 10\n
+        INPUT \"Enter item name:\"; n$\n
+        INPUT \"Enter rate:\"; r\n
+        INPUT \"Enter quantity:\"; q\n
+        WRITE #1, n$, r, q\n
+        NEXT i\n
+        INPUT \"do you want to continue:\"; ch$\n
+        LOOP WHILE UCASE$(ch$) = \"Y\"\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+    <string name="filep16q">16. A sequential data file \"class.dat\" has several records with fields student\'s name, roll and class. WAP that reads all the records and displays only those records whose roll number is less than 10. </string>
+    <string name="filep16">
+        OPEN \"CLASS.dat\" FOR INPUT AS #1\n
+        CLS\n
+        WHILE NOT EOF(1)\n
+        INPUT #1, rol, nam$, cl\n
+        IF rol &lt; 10 THEN\n
+        PRINT rol, nam$, cl\n
+        END IF\n
+        WEND\n
+        CLOSE #1\n
+        END\n
+    </string>
+
+</resources>
